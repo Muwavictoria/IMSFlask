@@ -10,6 +10,7 @@ app = Flask(__name__)
 
 
 app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///ims.db"
+# app.config["SQLALCHEMY_DATABASE_URI"] = "sqlite:///inventory_system_db.db"
 app.config['SECRET_KEY']='secretkey'
 
 db = SQLAlchemy(app)
